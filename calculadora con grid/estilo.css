@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("imagenes/fondo.jpg") no-repeat center center/ cover;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora {
+    width: clamp(300px, 40vw ,350px);
+    background-image: radial-gradient(#3438cf, #341889);
+    box-shadow: 0 0 15px #aaa;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.visor {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: hidden;
+    white-space: pre-wrap;
+    width: 80%;
+    height: 50px;
+    background-color: #243567;
+    border-radius: 7px;
+    font-size: 2rem;
+    padding-right: 10px;
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    gap: 10px;
+}
+.btn {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 5px #ccc;
+    font-size: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: background-color .3s;
+}
+.btn:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+.cero {
+    grid-column: span 3;
+    
+    
+}
+
+
+.accion {
+    background-color: #666;
+    color: white;
+}
+
+.igual {
+    grid-row: span 2;
+    background-color: #cc2612;
+    border-radius: 7px;
+}
