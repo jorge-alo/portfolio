@@ -72,75 +72,17 @@ window.addEventListener("resize",()=>{
   updatePosition(slickWidth,maxPosition);
 })
 
-
-
-
-
-
-/*
-
-const btnNext = document.querySelector(".btn-rigth");
-const btnPrev = document.querySelector(".btn-left");
-const track = document.querySelector(".portfolio__carruseles");
-const slick = document.querySelectorAll(".carruseles__img");
-const slickList = document.querySelector(".portfolio__carrusel");
-
-const slickWidth = slick[0].offsetWidth;
-btnPrev.onclick = ()=> move(1);
-btnNext.onclick = ()=> move(2);
-let currentIndex = 0;
-let leftPosition;
-function move(value) {
-  const trackWidth = track.offsetWidth;
-  const listWidth = slickList.offsetWidth;
-  const maxPosition = trackWidth - listWidth;
-  track.style.left == "" ? leftPosition = track.style.left = 0 : leftPosition = parseFloat(track.style.left.slice(0,-2) * -1);
-
-  if(leftPosition < (trackWidth - listWidth) && value == 2) {
-    console.log(leftPosition);
-    console.log(trackWidth - listWidth);
-    track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
-    currentIndex++;
-  } if(leftPosition > 0 && value == 1){
-    track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
-    currentIndex--;
-  }
-
-  const newLeftPosition = -1 * (slickWidth * currentIndex);
-
-    // Asegurarse de que no se desborde
-    if (newLeftPosition > -maxPosition) {
-        track.style.left = `${newLeftPosition}px`;
-    } else {
-        track.style.left = `${-maxPosition}px`;
+/*----------------------color de fondo--------------- */
+const colorFondo = document.querySelector(".color-fondo");
+colorFondo.addEventListener("click",()=>{
+  const interruptor = document.querySelector(".claro");
+  interruptor.classList.toggle("oscuro")
+    if(colorFondo.textContent == "Dark"){
+      colorFondo.textContent = "Ligth";
+    }else{
+      colorFondo.textContent = "Dark";
     }
-}
-*/
+  const body = document.querySelector("body");
+  body.classList.toggle("cambio-variables");
+})
 
-/*---------------------------carrusel------------------------ */
-
-
-/*
-    const btnPrev = document.getElementById("button-prev");
-    const btnNext = document.getElementById("button-next");
-    const slickList = document.getElementById("slick-list");
-    const track = document.getElementById("track");
-    const slick = document.getElementById('.slick');
-
-    const slickWidth = slick[0].offsetWidth;
-
-    btnPrev.onclick = ()=> move(1);
-    btnNext.onclick = ()=> move(2);
-
-    move(value) {
-      const trackWidth = track.offsetWidth;
-      const listWidth = slickList.offsetWidth;
-
-      track.style.left == "" ? leftPosition = track.style.left = 0 : leftPosition = parseFloat(track.style.left.slice(0,-2) * -1);
-
-      if(leftPosition < (trackWidth - listWidth) && value == 2) {
-        track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
-      }else if(leftPosition > 0 && value == 1){
-        track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
-      }
-    }*/
