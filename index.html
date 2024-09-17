@@ -11,6 +11,7 @@
 <body>
     <header class="header">
         <img class="header-img" src="imagenes/icono-frontend.jpg" alt="imagen">
+           <div class="container-color-fondo"><div class="claro"><button class="color-fondo">Dark</button></div></div>
             <i class="fa-solid fa-bars icono"></i>
         <nav class="header-nav">           
                 <div class="link">
@@ -64,9 +65,9 @@
 
                                 <div class="bar-container__datos">
                                     <div class="bar-bar">
-                                        <div class="bar-60">60%</div>   
+                                        <div class="bar-80">80%</div>   
                                     </div>
-                                    <label for="">Node.js</label>
+                                    <label for="">git</label>
                                 </div>
                             </div>
                         </div>
@@ -82,59 +83,98 @@
 
                 <section class="carruseles__img">
                     <div>
-                        <a href="calculadora con grid/index.html" target="_blank">
+                        <a href="../proyectos html, css,js/calculadora con grid/index.html" target="_blank">
                         <picture>
-                            <img src="imagenes/fondo-carrusel1.webp" alt="">
+                            <img src="imagenes/fondo-carrusel1.webp" alt="calculadora">                            
                         </picture>
-                        </a>
+                        <h2 class="titulo-img">Calculadora</h2>
+                        </a>                       
                     </div>
                 </section>
                     
                 <section class="carruseles__img">
                     <div>
-                        <a href="color rgb/index.html" target="_blank">
+                        <a href="../proyectos html, css,js/color rgb/index.html" target="_blank">
                         <picture>
-                            <img src="imagenes/fondo-carrusel2.jpg" alt="">
+                            <img src="imagenes/fondo-carrusel2.jpg" alt="color rgb">                          
                         </picture>
-                        </a>
+                        <h2 class="titulo-img">Color rgb</h2>
+                        </a>                       
                     </div>
                 </section>
                 <section class="carruseles__img">
                     <div>
-                        <a href="colores aleatorios/index.html" target="_blank">
+                        <a href="../proyectos html, css,js/colores aleatorios/index.html" target="_blank">
                         <picture>
-                            <img src="imagenes/fondo-carrusel3.avif" alt="">
+                            <img src="imagenes/fondo-carrusel3.avif" alt="colores aleatorios">                          
                         </picture>
-                        </a>
+                        <h2 class="titulo-img">Colores aleatorios</h2>
+                        </a>                       
                     </div>
                 </section>
                 <section class="carruseles__img">
                     <div>
-                        <a href="cronometro/index.html" target="_blank">
+                        <a href="../proyectos html, css,js/cronometro/index.html" target="_blank">
                         <picture>
-                            <img src="imagenes/fondo-carrusel4.webp" alt="">
+                            <img src="imagenes/fondo-carrusel4.webp" alt="cronometro">                          
                         </picture>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="carruseles__img">
-                    <div>
-                        <a href="cifrador cesar/index.html" target="_blank">
-                        <picture>
-                            <img src="imagenes/fondo-carrusel2.jpg" alt="">
-                        </picture>
-                        </a>
+                        <h2 class="titulo-img">Cronometro</h2>
+                        </a>                       
                     </div>
                 </section>
 
                 <section class="carruseles__img">
                     <div>
-                        <a href="mis tareas/index.html" target="_blank">
+                        <a href="../proyectos html, css,js/cifrador cesar/index.html" target="_blank">
                         <picture>
-                            <img src="imagenes/fondo-carrusel1.webp" alt="">
+                            <img src="imagenes/fondo-carrusel2.jpg" alt="cifrador cesar">                          
                         </picture>
-                        </a>
+                        <h2 class="titulo-img">Cifrador Cesar</h2>
+                        </a>                       
+                    </div>
+                </section>
+
+                <section class="carruseles__img">
+                    <div>
+                        <a href="../proyectos html, css,js/mis tareas/index.html" target="_blank">
+                        <picture>
+                            <img src="imagenes/fondo-carrusel1.webp" alt="tareas">                           
+                        </picture>
+                        <h2 class="titulo-img">To do list</h2>
+                        </a>                        
+                    </div>
+                </section>
+
+                <section class="carruseles__img">
+                    <div>
+                        <a href="../proyectos dalto/caja de chat/index.html" target="_blank">
+                        <picture>
+                            <img src="imagenes/fondo-carrusel7.jpg" alt="caja de chat">                           
+                        </picture>
+                        <h2 class="titulo-img">Caja de chat</h2>
+                        </a>                       
+                    </div>
+                </section>
+
+                <section class="carruseles__img">
+                    <div>
+                        <a href="../proyectos dalto/menu lateral/index.html" target="_blank">
+                        <picture>
+                            <img src="imagenes/fondo-carrusel8.jpg" alt="Menu lateral">                           
+                        </picture>
+                        <h2 class="titulo-img">Menu lateral</h2>
+                        </a>                       
+                    </div>
+                </section>
+
+                <section class="carruseles__img">
+                    <div>
+                        <a href="../proyectos dalto/tarjeta giratoria/index.html" target="_blank">
+                        <picture>
+                            <img src="imagenes/fondo-carrusel9.jpg" alt="tarjeta giratoria">                           
+                        </picture>
+                        <h2 class="titulo-img">Tarjeta giratoria</h2>
+                        </a>                        
                     </div>
                 </section>
             </div>
@@ -148,15 +188,15 @@
         <form class="form">
             <div action="#" class="form__item">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Jhon">
+                <input type="text" id="nombre" placeholder="Jhon" required>
             </div>
             <div class="form__item">
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" placeholder="Doe">
+                <input type="text" id="apellido" placeholder="Doe" required>
             </div>
             <div class="form__item">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Mail@example.com">
+                <input type="email" id="email" placeholder="Mail@example.com" required>
             </div>
             <div class="form__item">
                 <label for="textarea">Mensaje</label>
